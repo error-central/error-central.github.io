@@ -2,8 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Central</title>
+  <link href="/css/ec-standalone.0b0f392d104defa83505.css" rel="stylesheet"></head>
+
+  <body>
+    <div class="holder">
+      <form method="post" id="search-form">
+        <h1>Error Central Search</h1>
+        <textarea
+          id="ec-query"
+          class="input searchbox"
+          name="text"
+          placeholder="Paste your error here!"
+          required
+        ></textarea>
+
+        <input class="button search-button" type="submit" value="Search" />
+      </form>
+
+      <div id="stackex-questions">
+        <!-- Question listings qo here-->
+      </div>
+      <!-- Templates : normally should be hidden-->
+      <div id="templates" class="hidden">
+        <div class="stackex-question">
+          <h1><a class="stackex-question-title"></a></h1>
+          <div class="query-headline"></div>
+        </div>
+
+        <div class="no-results">
+          <h3>Sorry, we couldn't find anything to match your query.</h3>
+        </div>
+
+        <h3 class="error"></h3>
+      </div>
+    </div>
+
+    <div id="stackex-attribution">
+      Questions and Answers from
+      <a href="https://stackexchange.com/">StackExchange network</a> provided under license
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>.
+    </div>
+  <script type="text/javascript" src="/scripts/vendor.0b0f392d104defa83505.js"></script><script type="text/javascript" src="/scripts/ec-standalone.0b0f392d104defa83505.js"></script></body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>ec-standalone</title>
-  <link href="/css/ec-standalone.81ba99ef9695d4a57a2e.css" rel="stylesheet"></head>
+  </head>
 
   <body>
     <section id="app"></section>
@@ -11,5 +61,6 @@
       <div>Generated Wed Feb 26 2020 21:35:16 GMT-0600 (Central Standard Time)</div>
     </section>
     <img src="img/yeoman-003.png" alt="logo" />
-  <script type="text/javascript" src="/scripts/ec-standalone.81ba99ef9695d4a57a2e.js"></script></body>
+  </body>
 </html>
+ -->
